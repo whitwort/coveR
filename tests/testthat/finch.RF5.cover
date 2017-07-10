@@ -1,0 +1,13 @@
+---
+reference: Finch, Jones and Mahame (2012)
+solution: 249719367701683934130360 (mod 371482251142134710480760)
+sequence: riesel
+---
+
+ 0 (mod  2)  1 (mod  3)      24 (mod     104)
+ 0 (mod  3)  1 (mod  7)       2 (mod    2801)
+ 1 (mod  4)  3 (mod  5)     141 (mod     781)
+11 (mod 12)  2 (mod 13)       3 (mod   30941)
+ 1 (mod 18) 10 (mod 19)     336 (mod   13032)
+31 (mod 36) 32 (mod 73)     480 (mod  546120)
+ 7 (mod 36) 24 (mod 37) 1925922 (mod 1926221)

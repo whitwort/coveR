@@ -1,0 +1,13 @@
+---
+reference: Finch, Jones and Mahame (2012)
+solution: 25155123789 (mod 55386611280)
+sequence: sierpinski
+---
+
+ 0 (mod  2)
+ 0 (mod  3)
+ 1 (mod  4)
+11 (mod 12)
+ 7 (mod  9)
+31 (mod 36)
+19 (mod 36)

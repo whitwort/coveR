@@ -1,0 +1,13 @@
+---
+reference: Finch, Jones and Mahame (2012)
+solution: 12697694153 (mod 55386611280)
+sequence: riesel
+bad: covering
+---
+
+ 0 (mod  2)  1 (mod   3)    1 (mod   13)
+ 1 (mod  4)  3 (mod   5)    5 (mod   31)
+11 (mod 12)  2 (mod  13)  137 (mod  167)
+ 7 (mod  9)  4 (mod  73) 4553 (mod 5328)
+31 (mod 36) 32 (mod  37)  347 (mod  469)
+19 (mod 36) 54 (mod 109)  683 (mod  990)

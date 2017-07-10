@@ -12,4 +12,3 @@ Session counting function
 \details{
 Blarg
 }
-
