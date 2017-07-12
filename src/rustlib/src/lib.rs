@@ -16,7 +16,7 @@ fn all_true(x: &Vec<bool>) -> bool {
 }
 
 // #[rustr_export]
-pub fn vec_check(a: &Vec<u64>, b: &Vec<u64>) -> bool {
+pub fn check_covering(a: &Vec<u64>, b: &Vec<u64>) -> bool {
 
     let max_n  = max(b) - 1;
     let mut ns = vec![false; (max_n + 1) as usize];

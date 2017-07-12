@@ -3,12 +3,12 @@
 use super::*;
 
 #[no_mangle]
-pub extern "C" fn rustr_vec_check(a : SEXP, b : SEXP)->SEXP{
+pub extern "C" fn rustr_check_covering(a : SEXP, b : SEXP)->SEXP{
 
  let a_ : Vec<u64> = unwrapr!( Vec::rnew(a) );
 
 let b_ : Vec<u64> = unwrapr!( Vec::rnew(b) );
- let res  = vec_check(& a_,& b_);
+ let res  = check_covering(& a_,& b_);
 
  let res_sexp : SEXP = unwrapr!(res.intor());
 
