@@ -15,14 +15,25 @@ fn all_true(x: &Vec<bool>) -> bool {
     true
 }
 
+// ' Check a covering for a set of moduli and residuals
+// ' 
+// ' Checks whether or not a set of residuals and moduli.  Both parameters 
+// ' (r and m) must be integer vectors; use \code{\link{as.integer}} to convert 
+// ' generic numeric vectors to integer vectors.
+// '
+// ' @param r an integer vector containing residuals
+// ' @param m an integer vector containing the moduli
+// ' @return a single boolean value
+// '
+// ' @export
 // #[rustr_export]
-pub fn check_covering(a: &Vec<u64>, b: &Vec<u64>) -> bool {
+pub fn check_covering(r: &Vec<u64>, m: &Vec<u64>) -> bool {
 
-    let max_n  = max(b) - 1;
+    let max_n  = max(m) - 1;
     let mut ns = vec![false; (max_n + 1) as usize];
 
-    for (index, residual) in a.iter().enumerate() {
-        let modulo = b[index];
+    for (index, residual) in r.iter().enumerate() {
+        let modulo = m[index];
 
         let mut i = 0;
         loop {

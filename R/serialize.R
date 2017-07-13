@@ -18,7 +18,6 @@ names(ct.columns) <- c("a","b","r","p","c","h")
 #' @details The lengths of a, b must be the same.
 #'
 #' @return a covering object
-#' @export
 covering    <- function(a = NA, b = NA, r = NA, p = NA, s = NA, h = NA, solution = list(k = NA, mod = NA), ...) {
   tools::assertError(length(a) == length(b))
   as.cover(list(..., solution = solution, a, b, r, p, s, h))
