@@ -4,7 +4,6 @@
 #' 
 #' @docType package
 #' @name coveR
-#' @importFrom Rcpp evalCpp
 #' @import gmp
 #' @import magrittr
 #' @useDynLib coveR

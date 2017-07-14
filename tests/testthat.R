@@ -1,4 +1,4 @@
 library(testthat)
-library(plateKinetics)
+library(coveR)
 
 test_check("coveR")
