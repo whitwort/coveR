@@ -1,3 +1,9 @@
+#![feature(test)]
+extern crate test;
+
+#[cfg(test)]
+mod tests;
+
 #[macro_use]
 extern  crate rustr;
 pub mod export;
