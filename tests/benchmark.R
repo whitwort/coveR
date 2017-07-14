@@ -17,4 +17,9 @@ r_check_covering <- function(r, m) {
   
 }
 
-microbenchmark(r_check_covering(r, m), check_covering(r, m), times = 1000)
+message("From R:")
+rbench <- microbenchmark(r_check_covering(r, m), check_covering(r, m), times = 1000)
+print(rbench)
+
+message("In native Rust:")
+system("cd src/rustlib && cargo bench")
