@@ -6,6 +6,13 @@ Utilities for working with coverings in R and Rust.
 
 This package incorporates code compiled via [Rust](https://www.rust-lang.org/en-US/).  Follow [these instructions to install](https://www.rust-lang.org/en-US/install.html) the rust compiler and cargo developement tools.
 
+For now, you'll need to opt into the Nightly Rust build toolchain as this package uses the new format for Rust test suites.  You can do that by executing these shell commands after installing Rust:
+
+```shell
+rustup install nightly
+rustup default nightly
+```
+
 Next install the [RustR](https://rustr.org/) bridge packge from github:
 
 ```r
