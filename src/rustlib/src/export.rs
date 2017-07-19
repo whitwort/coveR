@@ -8,7 +8,8 @@ pub extern "C" fn rustr_check_covering(r : SEXP, m : SEXP)->SEXP{
  let r_ : Vec<u64> = unwrapr!( Vec::rnew(r) );
 
 let m_ : Vec<u64> = unwrapr!( Vec::rnew(m) );
- let res  = check_covering(& r_,& m_,& lmc_);
+ 
+ let res  = check_covering(& r_,& m_);
 
  let res_sexp : SEXP = unwrapr!(res.intor());
 
