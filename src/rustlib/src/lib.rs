@@ -27,15 +27,16 @@ fn all_true(x: &Vec<bool>) -> bool {
 // ' (r and m) must be integer vectors; use \code{\link{as.integer}} to convert 
 // ' generic numeric vectors to integer vectors.
 // '
-// ' @param r an integer vector containing residuals
+// ' @param r an integer vector containing residues
 // ' @param m an integer vector containing the moduli
+// , @param lcm an integer as the lcm of the moduli
 // ' @return a single boolean value
 // '
 // ' @export
 // #[rustr_export]
-pub fn check_covering(r: &Vec<u64>, m: &Vec<u64>) -> bool {
+pub fn check_covering(r: &Vec<u64>, m: &Vec<u64>, lcm:i64) -> bool {
 
-    let max_n  = max(m) - 1;
+    let max_n  = lcm - 1;
     let mut ns = vec![false; (max_n + 1) as usize];
 
     for (index, residual) in r.iter().enumerate() {
