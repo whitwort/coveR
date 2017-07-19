@@ -34,9 +34,9 @@ fn all_true(x: &Vec<bool>) -> bool {
 // '
 // ' @export
 // #[rustr_export]
-pub fn check_covering(r: &Vec<u64>, m: &Vec<u64>, lcm: u64) -> bool {
+pub fn check_covering(r: &Vec<u64>, m: &Vec<u64>) -> bool {
 
-    let max_n  = lcm - 1;
+    let max_n  = 47;
     let mut ns = vec![false; (max_n + 1) as usize];
 
     for (index, residual) in r.iter().enumerate() {
