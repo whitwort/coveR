@@ -54,10 +54,10 @@ pub fn check_covering(r: &Vec<u64>, m: &Vec<u64>) -> bool {
     all_true(&ns)
 }
 
-pub fn vectorize(size: u32) -> Vec<u32> {
+pub fn vectorize(size: i32) -> Vec<i32> {
     let mut zero_vec: Vec<u32> = Vec::with_capacity(size);
-    for i in 0..size {
-        zero_vec.push(i);
+    for num in 0..size {
+        zero_vec.push(num);
     }
     return zero_vec;
 }
